@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/woch');
+mongoose.connect('mongodb://localhost:27017/woch').catch(err => {
+  console.log('mongodb连接错误');
+});
 
 const projectSchema = new mongoose.Schema({
   name: String,
