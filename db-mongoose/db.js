@@ -12,7 +12,7 @@ const projectSchema = new mongoose.Schema({
 });
 
 const Models = {
-  User: mongoose.model('Project', projectSchema),
+  Project: mongoose.model('Project', projectSchema),
 };
 
 module.exports = Models;
